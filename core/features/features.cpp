@@ -84,7 +84,7 @@ namespace features {
 
 			const auto& unk0 = memory::read< uint64_t >( static_fields + 0x30 );
 
-			if ( !memory::is_valid( static_fields ) )
+			if ( !memory::is_valid( unk0 ) )
 				return;
 
 			const auto& pointer = sdk::base_networkable_c::decrypt( unk0 );
